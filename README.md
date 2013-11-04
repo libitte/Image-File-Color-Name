@@ -4,11 +4,29 @@ Image::File::Color::Name - It's new $module
 
 # SYNOPSIS
 
-    use Image::File::Color::Name;
+```perl
+
+use Image::File::Color::Name;
+use strict;
+use warnings;
+
+use Image::File::Color::Name;
+
+my $filename = q{/tmp/lime.jpeg};
+
+my $colorname = Image::File::Color::Name->new();
+print $colorname->fetch($filename);
+
+
+__END__
+
+GREEN
+
+```
 
 # DESCRIPTION
 
-Image::File::Color::Name is ...
+Image::File::Color::Name returns the color name of the image file
 
 # LICENSE
 
